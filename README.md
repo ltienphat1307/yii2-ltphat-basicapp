@@ -131,7 +131,7 @@ return [
 
 To mirgate data in first runnung, simply to type
 
-    ```php yii mirgate ```
+    php yii mirgate
 
 TESTING
 -------
