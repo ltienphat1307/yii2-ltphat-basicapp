@@ -47,6 +47,9 @@ $config = [
         'errorHandler' => [
             'maxSourceLines' => 20,
         ],
+        'utility' => [
+            'class' => 'c006\utility\migration\Module',
+        ],
         // 'session' => [
         //     'autoStart'=>true,
         // ],

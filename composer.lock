@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9523a17e89bbe7e8e54974f1bde19eba",
+    "content-hash": "95578a9c14c51cb804ee575eb5ee82ad",
     "packages": [
         {
             "name": "bizley/migration",
@@ -152,6 +152,45 @@
             ]
         },
         {
+            "name": "c006/yii2-migration-utility",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/c006/yii2-migration-utility.git",
+                "reference": "986cd6c069d3f6b674b92a9e360da7fce5439b5a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/c006/yii2-migration-utility/zipball/986cd6c069d3f6b674b92a9e360da7fce5439b5a",
+                "reference": "986cd6c069d3f6b674b92a9e360da7fce5439b5a",
+                "shasum": ""
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "c006\\utility\\migration\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jon Chambers",
+                    "email": "jchambers.dev@gmail.com"
+                }
+            ],
+            "description": "Automatically writes the create tables for migrations or create tables in general",
+            "keywords": [
+                "extension",
+                "migration",
+                "tables",
+                "yii2"
+            ],
+            "time": "2018-02-02T04:28:58+00:00"
+        },
+        {
             "name": "cebe/markdown",
             "version": "1.1.2",
             "source": {
@@ -264,12 +303,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ltienphat1307/yii2-ltphat-playvideo.git",
-                "reference": "d4e61581d1d99fda563727cbadd7477615c5f25e"
+                "reference": "4900bdc7ed4a682db8cc28f812512ef0170952d5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ltienphat1307/yii2-ltphat-playvideo/zipball/d4e61581d1d99fda563727cbadd7477615c5f25e",
-                "reference": "d4e61581d1d99fda563727cbadd7477615c5f25e",
+                "url": "https://api.github.com/repos/ltienphat1307/yii2-ltphat-playvideo/zipball/4900bdc7ed4a682db8cc28f812512ef0170952d5",
+                "reference": "4900bdc7ed4a682db8cc28f812512ef0170952d5",
                 "shasum": ""
             },
             "require": {
@@ -296,7 +335,7 @@
                 "extension",
                 "yii2"
             ],
-            "time": "2018-08-23T04:02:13+00:00"
+            "time": "2018-08-23T08:31:17+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -3215,7 +3254,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "c006/yii2-migration-utility": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
