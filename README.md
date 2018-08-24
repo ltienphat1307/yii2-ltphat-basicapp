@@ -128,8 +128,10 @@ return [
 - Refer to the README in the `tests` directory for information specific to basic application tests.
 
 #### Mirgate data
+
 To mirgate data in first runnung, simply to type
-    php yii mirgate 
+
+    ```php yii mirgate ```
 
 TESTING
 -------
