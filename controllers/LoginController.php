@@ -50,7 +50,7 @@ class LoginController extends Controller
 		if ($entry->load(Yii::$app->request->post()) && $entry->validate()) {
 			$res = $entry->register();
 			if ($res["success"]) {
-            	return $this->goHome();
+            	return $this->redirect(['index']);
             }
 
             return $this->render('regiser', ['entry' => $entry, 'messageError' => $res["messageError"]]);
