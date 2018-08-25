@@ -18,7 +18,7 @@ class SearchVideo extends Video
     public function rules()
     {
         return [
-            [['id', 'user_id'], 'integer'],
+            // [['id', 'user_id'], 'integer'],
             [['video_url', 'comment', 'title'], 'safe'],
         ];
     }
@@ -59,8 +59,7 @@ class SearchVideo extends Video
 
         // grid filtering conditions
         $query->andFilterWhere([
-            'id' => $this->id,
-            'user_id' => $this->user_id,
+            'user_id' => Yii::$app->user->indentiy->id,
         ]);
 
         $query->andFilterWhere(['like', 'video_url', $this->video_url])
