@@ -59,7 +59,7 @@ class SearchVideo extends Video
 
         // grid filtering conditions
         $query->andFilterWhere([
-            'user_id' => Yii::$app->user->indentiy->id,
+            'user_id' => Yii::$app->user->identity->id,
         ]);
 
         $query->andFilterWhere(['like', 'video_url', $this->video_url])
