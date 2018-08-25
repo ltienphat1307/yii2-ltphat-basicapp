@@ -1,26 +1,26 @@
 <?php
 
-// if (YII_ENV_DEV) {
-// 	return [
-// 	    'class' => 'yii\db\Connection',
-// 	    'dsn' => 'mysql:host=localhost;dbname=yii_basic',
-// 	    'username' => 'root',
-// 	    'password' => 'root',
-// 	    'charset' => 'utf8',
-
-// 	    // Schema cache options (for production environment)
-// 	    //'enableSchemaCache' => true,
-// 	    //'schemaCacheDuration' => 60,
-// 	    //'schemaCache' => 'cache',
-// 	];
-// }
-
-// if (YII_ENV_DEV) {
+if (YII_ENV_DEV) {
 	return [
 	    'class' => 'yii\db\Connection',
-	    'dsn' => 'mysql:host=//databases.000webhost.com;dbname=id6896486_yii_basic;port=3306',
-	    'username' => 'id6896486_root',
-	    'password' => '12345678@Xx',
+	    'dsn' => 'mysql:host=localhost;dbname=yii_basic',
+	    'username' => 'root',
+	    'password' => 'root',
+	    'charset' => 'utf8',
+
+	    // Schema cache options (for production environment)
+	    //'enableSchemaCache' => true,
+	    //'schemaCacheDuration' => 60,
+	    //'schemaCache' => 'cache',
+	];
+}
+
+if (YII_ENV_PRO) {
+	return [
+	    'class' => 'yii\db\Connection',
+	    'dsn' => 'mysql:host=sql7.freemysqlhosting.net;dbname=sql7253605;port=3306',
+	    'username' => 'sql7253605',
+	    'password' => 'bupnmF9ngS',
 	    'charset' => 'utf8',
 
 	    // Schema cache options (for production environment)
@@ -28,5 +28,5 @@
 	    'schemaCacheDuration' => 60,
 	    'schemaCache' => 'cache',
 	];
-// }
+}
 ?>
