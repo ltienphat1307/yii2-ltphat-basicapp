@@ -15,7 +15,7 @@ if (YII_ENV_DEV) {
 	];
 }
 
-if (YII_ENV_PRO) {
+if (YII_ENV_PROD) {
 	return [
 	    'class' => 'yii\db\Connection',
 	    'dsn' => 'mysql:host=sql7.freemysqlhosting.net;dbname=sql7253605;port=3306',
