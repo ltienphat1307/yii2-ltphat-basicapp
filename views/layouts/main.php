@@ -147,7 +147,7 @@ AppAsset::register($this);
                 </div>
             </div>
             <div class="col-xs-12 col-sm-4">
-                <!-- <iframe src="https://www.developmentready.com.au/"></iframe> -->
+                <iframe src="https://www.developmentready.com.au/"></iframe>
             </div>
         </div>
         <div class="row row-about">
