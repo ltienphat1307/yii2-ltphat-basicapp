@@ -21,7 +21,9 @@
         "yiisoft/yii2-debug": "~2.0.0",
         "yiisoft/yii2-gii": "~2.0.0",
         "bizley/migration": "~3.0.0",
-        "ltp-playvideo/yii2-ltphat-playvideo": "*"
+        "ltp-playvideo/yii2-ltphat-playvideo": "*",
+        "rmrevin/yii2-fontawesome": "~3.2",
+        "2amigos/yii2-selectize-widget": "~1.0"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",

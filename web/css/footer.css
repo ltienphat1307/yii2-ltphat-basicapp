@@ -1,0 +1,76 @@
+.footer {
+  background: url(/images/footer-logo.jpg);
+  padding: 15px 0px;
+  color: white;
+}
+.footer a {
+  color: #b5985a;
+  text-decoration: none;
+}
+.footer .f-title {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.footer h1 {
+  font-size: 32px;
+  border-bottom: 2px solid #f4ba2f;
+  margin: 0 0 25px 0;
+  padding: 10px 0 5px;
+}
+.footer h1 span {
+  color: #f4ba2f;
+}
+.footer .f-contact {
+  border-bottom: 1px solid white;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+.footer .list-group .list-group-item {
+  background: transparent;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  margin-top: 10px;
+  float: left;
+}
+.footer .list-group .list-group-item a {
+  color: white;
+}
+.footer .list-group .list-group-item a i {
+  position: absolute;
+  font-size: 20px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.footer .footer-body .row-content > div {
+  padding: 0 40px;
+}
+.footer .footer-body .col-middle {
+  border-right: 1px solid #888;
+  border-left: 1px solid #888;
+}
+.footer .footer-body .row-about {
+  margin-top: 15px;
+}
+.footer .footer-body .row-about > div {
+  margin-bottom: 15px;
+}
+.footer form .form-group input,
+.footer form .form-group .selectize-input,
+.footer form .form-group select {
+  border-radius: 0;
+}
+.footer .btn-subscribe {
+  background-color: #d3a228;
+  border-color: #cb9e2e;
+  margin: auto;
+  display: block;
+  padding: 10px 30px;
+}

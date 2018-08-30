@@ -14,13 +14,6 @@ body {
     padding: 70px 15px 20px;
 }
 
-.footer {
-    height: 60px;
-    background-color: #f5f5f5;
-    border-top: 1px solid #ddd;
-    padding-top: 20px;
-}
-
 .jumbotron {
     text-align: center;
     background-color: transparent;
@@ -113,3 +106,27 @@ a.desc:after {
 .nav > li > form > button.logout:focus {
     outline: none;
 }
+#subscribe-modal .modal-content {
+  background: #075285;
+  color: white;
+  padding: 25px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 18px;
+}
+#subscribe-modal .modal-body {
+  padding: 50px;
+}
+#subscribe-modal .close {
+  color: #ff0;
+  font-size: 70px;
+  opacity: 1;
+  font-weight: 300;
+  position: absolute;
+  right: 15px;
+  top: 0;
+}
+#subscribe-modal .error {
+  color: red;
+}
+
