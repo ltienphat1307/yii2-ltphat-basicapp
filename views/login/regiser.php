@@ -10,7 +10,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($entry, 'password')->label('Password')->passwordInput() ?>
 
-    <?= $form->field($entry, 'confirmPassword')->label('ConfirmPassword')->passwordInput() ?>
+    <?= $form->field($entry, 'confirm_password')->label('confirm_password')->passwordInput() ?>
 
     <?php if (isset($messageError)) { ?>
 	    <div class="form-group has-error">

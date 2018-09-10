@@ -113,8 +113,8 @@ AppAsset::register($this);
                         $subscribeForm = ActiveForm::begin(['action' => ['site/subscribe']]);
                         $subModel = new SubscribeForm();
                     ?>
-                    <?= $subscribeForm->field($subModel, 'firsName')->label(false)->input('firsName', ['placeholder' => 'First Name *']) ?>
-                    <?= $subscribeForm->field($subModel, 'lastName')->label(false)->input('lastName', ['placeholder' => 'Last Name *']) ?>
+                    <?= $subscribeForm->field($subModel, 'first_name')->label(false)->input('first_name', ['placeholder' => 'First Name *']) ?>
+                    <?= $subscribeForm->field($subModel, 'last_name')->label(false)->input('last_name', ['placeholder' => 'Last Name *']) ?>
                     <?= $subscribeForm->field($subModel, 'email')->label(false)->input('email', ['placeholder' => 'Email *']) ?>
                     <?= $subscribeForm->field($subModel, 'state')->label(false)->widget(SelectizeTextInput::className(),
                         [
@@ -128,13 +128,13 @@ AppAsset::register($this);
                             ]
                         ])
                     ?>
-                    <?= $subscribeForm->field($subModel, 'userType')->label(false)
+                    <?= $subscribeForm->field($subModel, 'user_type')->label(false)
                         ->dropDownList(
                             ['Agency' => 'Agency', 'Personal Developer' => 'Personal Developer', 'Professional Developer' => 'Professional Developer'],
                             ['prompt'=> 'User Type']
                         )
                     ?>
-                    <?= $subscribeForm->field($subModel, 'devInterest')->label(false)
+                    <?= $subscribeForm->field($subModel, 'dev_interest')->label(false)
                         ->dropDownList(
                             ['All' => 'All', 'Commercial' => 'Commercial', 'Industrial' => 'Industrial', 'Residential' => 'Residential', 'Mixed Use' => 'Mixed Use'],
                             ['prompt'=> 'Development Interest']

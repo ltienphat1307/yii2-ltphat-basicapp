@@ -70,7 +70,7 @@ class SiteController extends Controller
         $entry = new SubscribeForm();
 
         if ($entry->load(Yii::$app->request->post())) {
-            $apikey = '6c516a0c457ef8130671d0449015db15-us19';
+            $apikey = 'be68269594987518b7a3f527704b8df2-us19';
             $auth = base64_encode( 'user:'.$apikey );
             $listId = 'dd95c40449';
             $data = [

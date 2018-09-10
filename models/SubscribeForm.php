@@ -15,12 +15,12 @@ use yii\base\Exception;
  */
 class SubscribeForm extends Model
 {
-    public $firsName;
-    public $lastName;
+    public $first_name;
+    public $last_name;
     public $email;
     public $state;
-    public $userType;
-    public $devInterest;
+    public $user_type;
+    public $dev_interest;
 
     /**
      * @return array the validation rules.
@@ -28,9 +28,9 @@ class SubscribeForm extends Model
     public function rules()
     {
         return [
-            [['firsName', 'lastName', 'email', 'state'], 'required',],
+            [['first_name', 'last_name', 'email', 'state'], 'required',],
             ['email', 'email'],
-            [['userType', 'devInterest'], 'safe']
+            [['user_type', 'dev_interest'], 'safe']
         ];
     }    
 }

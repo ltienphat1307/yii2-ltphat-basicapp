@@ -17,7 +17,7 @@ use app\models\User;
 class LoginForm extends Model
 {
     public $name;
-    public $confirmPassword;
+    public $confirm_password;
     public $password;
     public $email;
     // public $rememberMe = true;
@@ -31,13 +31,12 @@ class LoginForm extends Model
     public function rules()
     {
         return [
-            [['name', 'email', 'password', 'confirmPassword'], 'required', 'on' => 'resgister'],
+            [['name', 'email', 'password', 'confirm_password'], 'required', 'on' => 'resgister'],
             ['name', 'required', 'on' => 'update'],
             [['email', 'password'], 'required', 'on' => 'login'],
             ['email', 'email'],
-            ['confirmPassword', 'compare', 'compareAttribute'=>'password', 'on' => 'resgister'],
-            [['password', 'confirmPassword'], 'safe', 'on' => 'update'],
-            // ['confirmPassword', 'compare', 'compareAttribute'=>'password', 'skipOnEmpty' => true, 'on' => 'update'],
+            ['confirm_password', 'compare', 'compareAttribute'=>'password', 'on' => 'resgister'],
+            [['password', 'confirm_password'], 'safe', 'on' => 'update'],
         ];
     }
 
